@@ -353,7 +353,7 @@ export default function RotatingAppShowcase() {
                   <div className="relative overflow-hidden rounded-xl shadow-2xl">
                     <img 
                       key={currentApp.id}
-                      src={`/app-${currentApp.id}.png`}
+                      src={`/portfolio/app-${currentApp.id}.png`}
                       alt={`${currentApp.name} application screenshot`}
                       className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 filter grayscale-[0.3] brightness-75 contrast-110"
                       onError={(e) => {
