@@ -159,17 +159,14 @@ export default function RotatingAppShowcase() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex relative overflow-hidden">
-      {/* Background animations */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
         <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-green-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
       </div>
 
-      {/* Sidebar - Always visible on desktop */}
       <div className={`fixed inset-y-0 left-0 z-50 w-80 bg-black/20 backdrop-blur-xl border-r border-white/10 transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
         <div className="p-6 text-white h-full overflow-y-auto">
-          {/* Close button */}
           <button
             onClick={() => setSidebarOpen(false)}
             className="absolute top-4 right-4 p-2 rounded-lg hover:bg-white/10 transition-colors"
@@ -177,7 +174,7 @@ export default function RotatingAppShowcase() {
             <X className="w-5 h-5" />
           </button>
 
-          {/* Profile section */}
+
           <div className="mb-8">
             <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
               <User className="w-10 h-10 text-white" />
@@ -186,7 +183,7 @@ export default function RotatingAppShowcase() {
             <p className="text-gray-300 text-sm">Loving challenges.. usually</p>
           </div>
 
-          {/* Menu items */}
+
           <div className="space-y-4">
             <div className="border-b border-white/10 pb-4">
               <h3 className="text-lg font-semibold mb-3 text-blue-300">Navigation</h3>
@@ -278,7 +275,6 @@ export default function RotatingAppShowcase() {
         </div>
       </div>
 
-      {/* Menu toggle button - Only visible on mobile */}
       <button
         onClick={() => setSidebarOpen(true)}
         className="lg:hidden fixed top-6 left-6 z-40 p-3 rounded-full bg-black/20 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 text-white"
@@ -300,7 +296,6 @@ export default function RotatingAppShowcase() {
           </div>
 
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
-            {/* Left side - Application details */}
             <div className="text-white space-y-6">
               <div className={`transition-all duration-150 ${isAnimating ? 'opacity-50' : 'opacity-100'}`}>
                 {/* Header */}
@@ -365,9 +360,7 @@ export default function RotatingAppShowcase() {
                         e.target.nextSibling.style.display = 'none';
                       }}
                     />
-                    {/* Gray overlay for better blending */}
                     <div className="absolute inset-0 bg-gray-900/20 pointer-events-none"></div>
-                    {/* Fallback placeholder if image doesn't load */}
                     <div 
                       key={`fallback-${currentApp.id}`}
                       className="w-full h-64 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl flex items-center justify-center text-gray-400 hidden"
@@ -385,14 +378,12 @@ export default function RotatingAppShowcase() {
               </div>
             </div>
 
-            {/* Right side - Circular carousel */}
             <div className="relative">
               <div 
                 className="flex items-center justify-center"
                 onMouseEnter={() => setAutoRotate(false)}
                 onMouseLeave={() => setAutoRotate(true)}
               >
-                {/* Main carousel container */}
                 <div className="relative w-96 h-96 flex items-center justify-center">
                   {applications.map((app, index) => {
                     const AppIcon = app.icon;
@@ -424,7 +415,6 @@ export default function RotatingAppShowcase() {
                   <ChevronLeft className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
                 </button>
 
-                {/* Dot indicators */}
                 <div className="flex space-x-2">
                   {applications.map((_, index) => (
                     <button
@@ -453,7 +443,6 @@ export default function RotatingAppShowcase() {
         </div>
       )}
 
-      {/* Auto-rotate indicator - Position adjusted for sidebar */}
       {!showCurrentInfo && (
         <div className="fixed bottom-6 right-6 flex items-center space-x-2 text-white/60 text-sm z-30">
           <div className={`w-2 h-2 rounded-full ${autoRotate ? 'bg-green-400 animate-pulse' : 'bg-gray-400'}`}></div>
@@ -461,11 +450,9 @@ export default function RotatingAppShowcase() {
         </div>
       )}
 
-      {/* Current Information and CV Modal */}
       {showCurrentInfo && (
         <div className="fixed inset-0 bg-black z-[999] flex items-center justify-center p-4">
           <div className="bg-gray-900/98 backdrop-blur-xl border border-white/20 rounded-2xl w-full max-w-4xl h-full max-h-[90vh] flex flex-col shadow-2xl">
-            {/* Header - Fixed */}
             <div className="flex justify-between items-center p-6 border-b border-white/20 bg-gray-900/98 backdrop-blur-xl flex-shrink-0">
               <h2 className="text-3xl font-bold text-white">Current Information and CV</h2>
               <button
@@ -476,7 +463,6 @@ export default function RotatingAppShowcase() {
               </button>
             </div>
 
-            {/* Scrollable content */}
             <div className="flex-1 overflow-y-scroll p-6 text-white" style={{ minHeight: 0 }}>
               <div className="space-y-8 pb-8">
                 {/* Current Status */}
@@ -666,7 +652,6 @@ export default function RotatingAppShowcase() {
                   </div>
                 </div>
 
-                {/* Languages */}
                 <div>
                   <h3 className="text-xl font-semibold text-blue-300 mb-4">Languages</h3>
                   <div className="bg-white/5 rounded-lg p-6 border border-white/10">
@@ -682,21 +667,16 @@ export default function RotatingAppShowcase() {
           </div>
         </div>
       )}
-
-      {/* Mobile overlay - Only on mobile when sidebar is open */}
       {sidebarOpen && (
         <div
           className="lg:hidden fixed inset-0 bg-black/50 z-40"
           onClick={() => setSidebarOpen(false)}
         />
       )}
-
-      {/* CV Modal - Moved to end to ensure it's on top */}
       {showCV && (
         <div className="fixed inset-0 bg-black z-[999] p-4">
           <div className="w-full h-full flex items-start justify-center pt-8">
             <div className="bg-gray-900/98 backdrop-blur-xl border border-white/20 rounded-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden shadow-2xl">
-              {/* Header - Fixed */}
               <div className="flex justify-between items-center p-6 border-b border-white/20 bg-gray-900/98 backdrop-blur-xl">
                 <h2 className="text-3xl font-bold text-white">Curriculum Vitae</h2>
                 <button
@@ -707,10 +687,8 @@ export default function RotatingAppShowcase() {
                 </button>
               </div>
 
-              {/* Scrollable content */}
               <div className="p-6 text-white overflow-y-auto max-h-[calc(85vh-100px)] scroll-smooth">
                 <div className="space-y-8 pb-6">
-                  {/* Education */}
                   <div>
                     <h3 className="text-xl font-semibold text-blue-300 mb-4">Education</h3>
                     <div className="space-y-4">
@@ -738,7 +716,6 @@ export default function RotatingAppShowcase() {
                     </div>
                   </div>
 
-                  {/* Experience */}
                   <div>
                     <h3 className="text-xl font-semibold text-blue-300 mb-4">Work Experience</h3>
                     <div className="space-y-4">
