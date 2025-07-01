@@ -6,7 +6,7 @@ const applications = [
     id: 1,
     name: 'XRDlicious',
     title: 'Powder Diffraction and More',
-    description: 'Online calculator of partial radial distribution function (PRDF), global RDF, and powder XRD/ND patterns for crystal structures. Experimental powder diffration file format conversion. MP, AFLOW, and COD databases search interface.',
+    description: 'Online calculator of partial radial distribution function (PRDF), global RDF, and powder XRD/ND patterns for crystal structures. Experimental powder diffraction file format conversion. MP, AFLOW, and COD databases search interface.',
     icon: Calculator,
     color: 'from-blue-500 to-purple-600',
     features: ['PRDF Calculation', 'Global RDF Analysis', 'XRD/ND Patterns', 'Crystal Structure Tools']
