@@ -481,16 +481,8 @@ export default function RotatingAppShowcase() {
                         <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-teal-600 rounded-full mt-2"></div>
                         <div>
                           <h4 className="font-semibold text-gray-200 mb-1">Current Work</h4>
-                          <p className="text-gray-300">Working at Faculty of Mechanical Engineering, CTU in Prague</p>
+                          <p className="text-gray-300">Faculty of Mechanical Engineering<br />CTU in Prague Institute of Physics of the Czech Academy of Sciences</p>
                         </div>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="w-3 h-3 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full mt-2"></div>
-                        <div>
-                          <h4 className="font-semibold text-gray-200 mb-1">Research Position</h4>
-                          <p className="text-gray-300"><strong>Institute of Physics of the Czech Academy of Sciences</strong></p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -557,8 +549,8 @@ export default function RotatingAppShowcase() {
                     <p className="text-gray-300 leading-relaxed">
                       Fundamental research of ion implantation and its application on surface modifications 
                       of titanium with nitrogen beam using a combined experimental and computational approach. 
-                      The work involves advanced computational materials science, including DFT calculations, 
-                      molecular dynamics simulations, and machine learning applications in materials research.
+                      The work involves DFT predictions, 
+                      molecular dynamics simulations, and machine learning applications.
                     </p>
                   </div>
                 </div>
@@ -581,15 +573,36 @@ export default function RotatingAppShowcase() {
                     </div>
                   </div>
                 </div>
-
-                
-                {/* Research Achievements */}
+                  
+                {/* Experimental Skills */}
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-300 mb-4">Research Achievements</h3>
+                  <h3 className="text-xl font-semibold text-blue-300 mb-4">Experimental Skills</h3>
+                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                    <div className="space-y-3">
+                      <div>
+                        <h4 className="font-semibold text-gray-200 mb-1">Ion Implantation</h4>
+                        <p className="text-gray-300 text-sm">Experienced in ion implantation techniques and analysis</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-200 mb-1">X-ray Diffraction</h4>
+                        <p className="text-gray-300 text-sm">Single crystal orientations, phase analysis, stress analysis</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-200 mb-1">SAXS Analysis</h4>
+                        <p className="text-gray-300 text-sm">Small-angle X-ray scattering measurements and analysis</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Research Activities */}
+                <div>
+                  <h3 className="text-xl font-semibold text-blue-300 mb-4">Research Activities</h3>
                   <div className="bg-white/5 rounded-lg p-6 border border-white/10">
                     <ul className="space-y-2 text-gray-300">
                       <li>• 10 published articles and conference papers</li>
                       <li>• Participated in 10 international conferences</li>
+                      <li>• Two months (May - June 2025) study stay at the University of Jyväskylä, Finland</li>
                       <li>• Contributed to 3 grant proposals</li>
                       <li>• Work on 2 student grants</li>
                       <li>• Teaching bachelor courses (Seminar of Computer Simulations, Basics of Solid State Physics)</li>
@@ -617,26 +630,7 @@ export default function RotatingAppShowcase() {
                   </div>
                 </div>
 
-                {/* Experimental Skills */}
-                <div>
-                  <h3 className="text-xl font-semibold text-blue-300 mb-4">Experimental Skills</h3>
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <div className="space-y-3">
-                      <div>
-                        <h4 className="font-semibold text-gray-200 mb-1">Ion Implantation</h4>
-                        <p className="text-gray-300 text-sm">Experienced in ion implantation techniques and analysis</p>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-200 mb-1">X-ray Diffraction</h4>
-                        <p className="text-gray-300 text-sm">Single crystal orientations, phase analysis, stress analysis</p>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-200 mb-1">SAXS Analysis</h4>
-                        <p className="text-gray-300 text-sm">Small-angle X-ray scattering measurements and analysis</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
 
                 {/* Academic Activities */}
                 <div>
@@ -647,7 +641,6 @@ export default function RotatingAppShowcase() {
                       <li>• Supervision of student projects</li>
                       <li>• Participation in international conferences</li>
                       <li>• Collaboration on grant proposals</li>
-                      <li>• Peer review activities</li>
                     </ul>
                   </div>
                 </div>
