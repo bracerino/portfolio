@@ -483,6 +483,7 @@ export default function RotatingAppShowcase() {
                           <h4 className="font-semibold text-gray-200 mb-1">Current Work</h4>
                           <p className="text-gray-300">Faculty of Mechanical Engineering<br />CTU in Prague Institute of Physics of the Czech Academy of Sciences</p>
                         </div>
+                      </div>
                     </div>
                   </div>
                 </div>
